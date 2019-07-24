@@ -73,6 +73,19 @@ header .navbar-default, .post-item, .widget, footer, .post-author, .post-comment
     padding: 20px;
 }
 
+.padding-10 .excerpt,
+.home-excerpt p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+
+.padding-10 p {
+    text-align: justify;
+}
+
 .post-item-body .post-meta {
     border-top: 1px solid #e7e7e7;
     overflow: hidden;
