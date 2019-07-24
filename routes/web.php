@@ -20,7 +20,10 @@
 //Route::get('/home', 'HomeController@index')->name('home');
 
 
-Route::get('/', ['uses' => 'BlogController@index'])->name('show.all.blog');
+Route::get('/', [
+    'uses'  => 'BlogController@index',
+    'as'    => 'blog'
+]);
 
 Route::get('/blog/show', function() {
     return view('blog.show');

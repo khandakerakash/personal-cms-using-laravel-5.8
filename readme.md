@@ -9,7 +9,7 @@
 
 # `CMS` Development Using  [Laravel 5.8](https://laravel.com/)
 
-## Here, I have created a simple blog application for `RESTful API` practice purpose<Enter>
+## Here, I have created a personal `CMS` for practicing a `Laravel`.<Enter>
 
 ### Instalation
 #### 1. Clone this repo:

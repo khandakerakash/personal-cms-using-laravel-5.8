@@ -34,11 +34,12 @@ $factory->define(Post::class, function (Faker $faker) {
     $image = "Post_Image_" . rand(1, 5) . ".jpg";
 
     return [
-        'author_id' => rand(1, 2),
-        'title' => $faker->sentence(rand(8, 12)),
-        'slug' => $faker->slug(),
-        'excerpt' => $faker->sentence(rand(200, 250)),
-        'body' => $faker->paragraphs(rand(10, 15), true),
-        'image' => rand(0, 1) == 1 ? $image : NULL
+        'author_id'    => rand(1, 2),
+        'title'        => $faker->sentence(rand(8, 12)),
+        'slug'         => $faker->slug(),
+        'excerpt'      => $faker->sentence(rand(200, 250)),
+        'body'         => $faker->paragraphs(rand(10, 15), true),
+        'image'        => rand(0, 1) == 1 ? $image : NULL,
+        'published_at' => $faker->dateTime($max = 'now', $timezone = null)
     ];
 });

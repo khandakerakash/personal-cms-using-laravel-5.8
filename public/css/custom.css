@@ -333,3 +333,49 @@ ul.social-icons li {
 span.required {
     color: red;
 }
+
+/* CUSTOM PAGER STYLE */
+nav.pager-wrap .pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+}
+
+.pager-wrap .pagination {
+    padding-left: 0 !important;
+    margin: 20px 0 !important;
+    text-align: center !important;
+    list-style: none !important;
+    border-radius: unset;
+    display: unset;
+}
+
+.pager-wrap .pagination li {
+    display: inline !important;
+}
+
+.pager-wrap .pagination li>span,
+.pager-wrap .pagination li>a {
+    color: #777;
+    display: inline-block !important;
+    padding: 5px 14px !important;
+    background-color: #fff !important;
+    border: 1px solid #ddd !important;
+    border-radius: 15px !important;
+}
+
+.pager-wrap .pagination .disabled>a,
+.pager-wrap .pagination .disabled>a:focus,
+.pager-wrap .pagination .disabled>a:hover,
+.pager-wrap .pagination .disabled>span {
+    color: #777;
+    cursor: not-allowed;
+    background-color: #fff;
+}
+
+.pager-wrap .pagination li>a:focus,
+.pager-wrap .pagination li>a:hover {
+    text-decoration: none !important;
+    background-color: #eee !important;
+}
