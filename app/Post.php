@@ -2,10 +2,9 @@
 
 namespace App;
 
-use GrahamCampbell\Markdown\Facades\Markdown;
 use Carbon\Carbon;
+use GrahamCampbell\Markdown\Facades\Markdown;
 use Illuminate\Database\Eloquent\Model;
-use phpDocumentor\Reflection\Types\Null_;
 
 class Post extends Model
 {
@@ -15,11 +14,27 @@ class Post extends Model
         'published_at'
     ];
 
+    protected $fillable = [
+        'author_id',
+        'category_id',
+        'title',
+        'slug',
+        'excerpt',
+        'body',
+        'image',
+        'published_at'
+    ];
+
     public function author()
     {
         return $this->belongsTo(User::class);
     }
-    
+
+    public function category()
+    {
+        return $this->belongsTo(Category::class);
+    }
+
     public function getImageUrlAttribute($value)
     {
         $imageUrl = "";

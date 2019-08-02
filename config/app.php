@@ -1,5 +1,7 @@
 <?php
 
+use GrahamCampbell\Markdown\MarkdownServiceProvider;
+
 return [
 
     /*
@@ -165,6 +167,7 @@ return [
         /*
          * Package Service Providers...
          */
+        GrahamCampbell\Markdown\MarkdownServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -174,7 +177,8 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-        GrahamCampbell\Markdown\MarkdownServiceProvider::class,
+        App\Providers\ComposerServiceProvider::class,
+
 
     ],
 
